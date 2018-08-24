@@ -14,7 +14,7 @@ let users = [
         email: 'jonathan@digitalcrafts.com',
         password: 'europe'
     }
-]
+];
 // function to retrieve all users
 const getUsers = (req, res) => {
     res.send(users);
