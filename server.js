@@ -15,6 +15,11 @@ let users = [
         password: 'europe'
     }
 ]
-
+// function to retrieve all users
+const getUsers = (req, res) => {
+    res.send(users);
+}
+// make get request for users
+server.get('/users', getUsers);
 // listen on http://localhost:3000
 server.listen(3000);
